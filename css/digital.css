@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.icon-size {
+  height: 25px;
+}
+.border-dashed {
+  border-bottom: 1px dashed #11f0d2;
+}
+.border-project {
+  border: 15px solid #0d6efd;
+  margin: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(153, 153, 153, 0.4);
+}
+.border-left {
+  border-left: 10px solid #0d6efd;
+}
+.border-div-top {
+  border-top: 10px solid #0d6efd;
+}
+
+/* ------------------Laptop screen--------------------- */
+.grid-project {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+/* vị trí các phần */
+#goal {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#scopes {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+#Team {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+#primary {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+#Timeline {
+  grid-column: 3/4;
+  grid-row: 1/-1;
+}
+/* ------------------tablet & mobile screen--------------------- */
+@media (max-width: 768px) {
+  .grid-project {
+    display: flex;
+    flex-direction: column;
+  }
+  .border-left {
+    border-left: none;
+  }
+  .border-div-top {
+    border-top: none;
+  }
+  .border-div-bottom {
+    border-bottom: 10px solid #0d6efd;
+  }
+}

@@ -1,0 +1,53 @@
+/* css for tablet sreen max-width 768px */
+
+@media (max-width: 576px) {
+  /* css for navbar */
+  #nav-bar div {
+    display: none;
+  }
+  #nav-bar nav {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  #nav-bar a:nth-child(n) {
+    width: 100%;
+    border: none;
+    padding-left: 20px;
+  }
+
+  /* css for about */
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  #target,
+  #personal-info {
+    padding: 40px 40px;
+  }
+
+  /* css for job-info */
+  .job-info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* css for certificate: dùng bootstrap */
+  .border-left::before {
+    display: none;
+  }
+
+  /* css for project */
+  .project-div-respon {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-top: 2px solid rgba(179, 179, 179, 0.2);
+  }
+
+  /* css for footer */
+  #footer span {
+    display: none;
+  }
+}

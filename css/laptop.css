@@ -1,0 +1,323 @@
+/* css for laptop */
+
+/* thiet lap chung cho toan bo web */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgba(73, 80, 87, 0.9);
+}
+.icon {
+  margin-right: 5px;
+  color: #4dabf7;
+}
+.section-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+strong {
+  font-weight: 450;
+}
+
+/* .......................banner........................ */
+#banner {
+  color: #fff;
+  line-height: 1.5;
+  position: relative;
+}
+#banner img {
+  filter: brightness(50%);
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+#banner h1 {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+#banner span {
+  font-size: 16px;
+  font-weight: 300;
+  color: #dee2e6;
+}
+#banner div {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* ..............................nav-bar............................ */
+#nav-bar nav {
+  text-align: center;
+  justify-content: center;
+}
+#nav-bar a:link,
+a:visited {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+#nav-bar a:hover {
+  box-shadow: 0px 5px 10px rgba(140, 140, 140, 0.7); /*tạo hiệu ứng khi rê chuột */
+}
+#nav-bar a {
+  width: 130px;
+  padding: 10px 0;
+  border-left: 2px solid #dee2e6;
+}
+#nav-bar a:nth-child(2),
+a:nth-child(5) {
+  border-right: 2px solid #dee2e6;
+}
+#nav-bar img {
+  width: 50px;
+  height: 50px;
+  transform: scale(2.5);
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+#nav-bar div {
+  padding: 0 70px;
+}
+
+/* ..............................about............................ */
+.about-grid {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 1.5;
+}
+#target,
+#personal-info {
+  padding: 40px 80px;
+}
+#about h1 {
+  margin-bottom: 15px;
+  text-align: left;
+}
+#personal-info {
+  background-color: #e9ecef;
+}
+#personal-info ul {
+  padding-left: 0px;
+}
+#personal-info span {
+  color: #000;
+}
+.info {
+  list-style: none;
+  color: rgba(52, 56, 60, 0.6);
+}
+#target p {
+  line-height: 2;
+  color: rgba(52, 56, 60, 0.6);
+}
+/* .........................job-info............................ */
+.job-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+  column-gap: 20px;
+}
+#job-info h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.job-flex {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.time {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.component {
+  border: 2px solid #dee2e6;
+  padding: 20px 20px 40px 20px;
+  line-height: 1.7;
+  box-shadow: 0px 5px 10px rgba(179, 179, 179, 0.2);
+  margin-top: 20x;
+}
+.description {
+  margin-top: 30px;
+  margin-left: 25px;
+  position: relative;
+}
+.description::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 4px solid #f1f1f1;
+  background-color: #4dabf7;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+}
+.job-icon {
+  font-size: 40px;
+  color: rgba(73, 80, 87, 0.9);
+}
+/*.... Kinh nghiem ....*/
+#background-blue {
+  background-color: #4dabf7;
+  padding: 1px 9px 1px 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+/* .....So thich..... */
+.hobby {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.hobby-icon {
+  color: #4dabf7;
+  font-size: 20px;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #4dabf7;
+  display: flex !important; /*dung !important de thuc hien flex căn giữa*/
+  flex-direction: column;
+  justify-content: center;
+}
+.hobby div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+/* .....ngon ngu....... */
+.fill-blue {
+  display: inline-block;
+  height: 5px;
+  width: 60px;
+  background-color: #4dabf7;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.fill-grey {
+  display: inline-block;
+  height: 5px;
+  width: 60px;
+  background-color: #e4e4e4;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+/*......................... certificate..................... */
+#certificate p {
+  line-height: 1.5;
+  color: rgba(52, 56, 60, 0.6);
+}
+.border-left {
+  position: relative;
+}
+.border-left::before {
+  /*tạo đường kẻ dọc ngăn cách*/
+  content: "";
+  position: absolute;
+  background-color: #ffc107;
+  width: 2px;
+  height: 90%;
+  left: 0;
+  top: 5px;
+}
+/* ............................project.......................... */
+.project-div-respon {
+  padding: 10px 10px 0 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid rgba(179, 179, 179, 0.2);
+}
+.chevron-left {
+  width: 18px;
+}
+#project a:hover svg {
+  transform: translateX(5px);
+}
+.project-border {
+  border: 2px solid rgba(179, 179, 179, 0.2); /*tạo hiệu ứng đổ bóng*/
+  box-shadow: 0px 5px 10px rgba(179, 179, 179, 0.2);
+}
+.year-bg-blue {
+  background-color: #4dabf7; /*tạo màu cho năm*/
+  padding: 3px 10px 3px 10px;
+  border-radius: 20px;
+  color: #fff;
+}
+.project-icon {
+  color: rgba(73, 80, 87, 0.9);
+}
+h3 {
+  font-size: 18px !important;
+  font-weight: 500;
+}
+th {
+  width: 100px;
+  vertical-align: top;
+  text-align: left;
+  padding: 10px;
+}
+td {
+  line-height: 1.5;
+  padding: 10px 5px 10px 5px;
+}
+th,
+td {
+  border-top: 2px solid rgba(179, 179, 179, 0.2) !important;
+}
+table {
+  border-collapse: collapse;
+}
+
+/* ...........................contact........................... */
+#footer li {
+  list-style: none;
+  color: rgba(52, 56, 60, 0.6);
+  font-size: 16px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+#footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+}
+.footer-icon {
+  color: #4dabf7;
+  font-size: 250%;
+  text-align: center;
+}
+
+/* responsive riêng cho phần sở thích */
+@media (max-width: 1000px) {
+  .hobby {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+  }
+}

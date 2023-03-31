@@ -1,0 +1,79 @@
+/* css for tablet sreen max-width 768px */
+
+@media (max-width: 768px) {
+  /* css for navbar */
+  #nav-bar div {
+    display: none;
+  }
+  #nav-bar a:nth-child(2) {
+    border-right: none;
+  }
+
+  /* css for about */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  #target,
+  #personal-info {
+    padding: 20px 40px;
+  }
+
+  /* css for job-info */
+  .job-info-grid {
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(17, auto);
+  }
+  .experience {
+    grid-column: 1/2; /*đặt vị trí các khối tạo sự xen kẻ*/
+    grid-row: 1/8;
+  }
+  .education {
+    grid-column: 2/3;
+    grid-row: 1/9;
+  }
+  .activity {
+    grid-column: 2/3;
+    grid-row: 9/16;
+  }
+
+  .interest {
+    grid-column: 1/2;
+    grid-row: 14/18;
+  }
+  .language {
+    grid-column: 2/3;
+    grid-row: 16/18;
+  }
+  .skill {
+    grid-column: 1/2;
+    grid-row: 8/14;
+  }
+
+  /* css for certificate: dùng bootstrap */
+
+  /* css for project */
+  .project-div-respon {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-around;
+    justify-items: start;
+    border-top: 2px solid rgba(179, 179, 179, 0.2);
+  }
+  .project-div-respon p:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+  }
+  .project-div-respon p:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .project-div-respon p:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  th {
+    width: 60px;
+  }
+}
